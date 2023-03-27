@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>  
+ <head>
+   <meta charset="utf-8"> 
+   <title>Lapintaika | Lounaslista</title>  
+   <link rel="stylesheet" href="ravintola1.css">
+ </head> 
+ <body>
+  <img class="tausta" src="https://i.imgur.com/hEiHIpE.jpg" alt="taustakuva">
+   <div class="lapintaika">
+    <img class="lapinkuva" src="https://i.imgur.com/yZCqheF.png">
+   </div>
+   <div class="pudotus2">
+     <button class="navinappi">Navigaatio</button>
+
+     <div class="navinapit">
+      <a href="" class="Koti">Kotisivu</a>
+      <a href="" class="Menu">Menu</a>
+      <a href="" class="Juoma">Juomat</a>      
+      <a href="ravintolasivu1.html" class="Lounas2">Lounaslista</a>
+      <a href="" class="Ravi">Ravintolat</a>
+      <a href="" class="Palaute2">Palaute kysely</a>
+      </div>
+   </div>
+    <h class="News">Asiakaspalaute kysely</h>
+
+
+    <div class="lomake">
+      <form>
+      
+        <p class="teksti1" style="font-size:28px;">Milloin ruokailit Lapintaiassa?</p>
+        <input id="day" name="Date1" type="number" placeholder="pp" style="width:15%;height:28px;font-size:22px;" min="1" max="31" required /> /
+        <input id="month" name="Date1" type="number" placeholder="kk" style="width:15%;height:28px;font-size:22px;" min="1" max="12" required /> /
+        <input id="year" name="Date1" type="number" maxlength="4" placeholder="vvvv" style="width:18%;height:28px;font-size:22px;" min="1900" max="2023"required /><br>
+
+        <p class="teksti2" style="font-size:28px;">Kuinka usein kuukaudessa käyt Lapintaiassa?</p>
+        <input type="radio" id="0" name="käynti" value="0" required />
+        <label for="0">Vähemmän kuin kerran kuukaudessa</label><br>
+        <input type="radio" id="1" name="käynti" value="1" required />
+        <label for="1">1-3</label><br>
+        <input type="radio" id="4" name="käynti" value="4" required />
+        <label for="4">4-6</label><br>
+        <input type="radio" id="7" name="käynti" value="7" required />
+        <label for="7">7-10</label><br>
+        <input type="radio" id="10" name="käynti" value="10" required />
+        <label for="10">Useammin kuin 10</label><br>
+        
+        <p class="teksti3" style="font-size:28px;">Mikä on sukupuolesi?</p>
+        <input type="radio" id="female" name="suku" value="female" required />
+        <label for="female">Nainen</label><br>
+        <input type="radio" id="male" name="suku" value="male" required />
+        <label for="male">Mies</label><br>
+        <input type="radio" id="muu" name="suku" value="muu" required />
+        <label for="muu">Jokin muu</label><br>
+        <input type="radio" id="sanoa" name="suku" value="sanoa" required />
+        <label for="sanoa">En halua kertoa</label><br>
+      
+        <p class="teksti4" style="font-size:28px;">Kuinka kauan jouduit odottamaan ruokaasi?</p>
+        <input id="min" name="Time1" type="number" placeholder="min" style="width:15%;height:28px;font-size:22px;" min="0" max="59"> /
+        <input id="hour" name="Time1" type="number" placeholder="tunti" style="width:15%;height:28px;font-size:22px;" min="0" max="1">
+        <br>
+        <br>
+      
+        <p class="teksti5" style="font-size:28px;">Asteikolla 1-10 arvostele nämä osat kokemustasi Lapintaiassa.</p>
+        <p class="teksti6">Ruoan laatu</p>
+        <input id="ruoka" name="Ruoka" type="number" placeholder="1-10" style="width:15%;height:28px;font-size:22px;" min="1" max="10" required />
+        <p class="teksti7">Palvelu</p>
+        <input id="ruoka" name="Palvelu" type="number" placeholder="1-10" style="width:15%;height:28px;font-size:22px;" min="1" max="10" required />
+        <p class="teksti8">Mukavuus ravintolassa</p>
+        <input id="ruoka" name="Mukavuus" type="number" placeholder="1-10" style="width:15%;height:28px;font-size:22px;" min="1" max="10" required />
+        <p class="teksti9">Ruoan hinta</p>
+        <input id="ruoka" name="Hinta" type="number" placeholder="1-10" style="width:15%;height:28px;font-size:22px;" min="1" max="10" required />
+
+        <p class="teksti10" style="font-size:28px;">Tähän voit kirjoittaa vapaasti palautetta ravintolan johdolle.</p>
+        <input type="text" id="Vapaa" name="Vapaa" placeholder="Vapaa palaute" style="width:80%;height:90px;font-size:22px;text-overflow:clip;"><br>
+      
+        <p class="teksti11" style="font-size:28px;">Voit myös jättää yhteystietosi jotta voimme ottaa sinuun yhteyttä.</p>
+        <p class="teksti12">Sähköposti</p>
+        <input type="text" id="posti" name="posti" placeholder="Asiakas@Lapintaika.fi" style="width:40%;height:28px;font-size:22px;" value=""><br>
+        <p class="teksti13">Puhelin numero</p>
+        <input type="number" id="numero" name="numero" placeholder="040 123 4567" style="width:40%;height:28px;font-size:22px;" minlength="10" maxlength="10"><br>
+        
+        <input type="submit" style="width:15%;height:28px;font-size:22px;margin-top:20px;" value="Submit"><br>
+      </form>
+      </div>
+
+
+   <footer class="footer">Ravintola Lapintaika, Ravintolakatu 2, 98765 LAPINMAA<br>
+    Puh. (012) 345 6789 Sähköposti: varaukset@jokuposti.net<br>
+    aukioloajat: ma - pe, 10:30 - 15:00</footer>   
+  </body>  
+</html> 

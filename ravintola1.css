@@ -1,4 +1,7 @@
-  html, body {
+html {
+  background-color: antiquewhite;
+}
+html, body {
     margin: 0;
     padding: 0;
   }
@@ -7,6 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 2px solid Black;
     width: 100%;
     z-index: -5;
   }
@@ -18,6 +22,11 @@
     font-size: 44px;
     border-bottom: 2px solid black;
     margin-bottom: 10px;
+  }
+  .pudotus2 {
+    position: relative;
+    display: inline-block;
+    top: 22px;
   }
   .lapinkuva {
     height: 90px;
@@ -36,15 +45,36 @@
     top: -130px;
     left: 15px;
   }
+  .navinappi2 {
+    position: absolute;
+    font-size: 28px;
+    border: 3px solid black;
+    height: 60px;
+    width: 176px;
+    top: -130px;
+    left: 15px;
+  }
   .navinapit {
     display: none;
     flex-direction: column;
     position: absolute;
+    width: 173px;
     font-size: 28px;
     border: 2px solid black;
     background-color: gray;
     left: 15px;
     top: -72px;
+  }
+  .navinapit2 {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 173px;
+    font-size: 28px;
+    border: 2px solid black;
+    background-color: gray;
+    left: 15px;
+    top: -50px;
   }
   .navinapit a {
     color: black;
@@ -143,8 +173,8 @@
   }
   .News {
     position: absolute;
-    top: 28px;
-    left: 240px;
+    top: 26px;
+    right: 180px;
     color: black;
     padding-left: 15px;
     margin-top: 5px;
@@ -339,6 +369,18 @@
     border-top: 2px solid black;
     height: 70px;
   }
+
+  .lomake {
+    margin-left: 20%;
+    margin-bottom: 200px;
+    background:rgba(167, 156, 153, 0.8);
+    border: 2px solid black;
+    width: fit-content;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    font-size: 22px;
+  }
   
   .pudotus:hover .navinapit {display: inline-flex;}
   .pudotus .Koti:hover {border-left: 10px solid white;}
@@ -347,3 +389,15 @@
   .pudotus .Ravi:hover {border-left: 10px solid white;}
   .pudotus .Lounas {border-left: 10px solid red;}
   .pudotus .Palaute:hover {border-left: 10px solid white;}
+  .pudotus .Lounas2:hover {border-left: 10px solid white;}
+  .pudotus .Palaute2 {border-left: 10px solid red;}
+
+  .pudotus2:hover .navinapit {display: inline-flex;}
+  .pudotus2 .Koti:hover {border-left: 10px solid white;}
+  .pudotus2 .Menu:hover {border-left: 10px solid white;}
+  .pudotus2 .Juoma:hover {border-left: 10px solid white;}
+  .pudotus2 .Ravi:hover {border-left: 10px solid white;}
+  .pudotus2 .Lounas {border-left: 10px solid red;}
+  .pudotus2 .Palaute:hover {border-left: 10px solid white;}
+  .pudotus2 .Lounas2:hover {border-left: 10px solid white;}
+  .pudotus2 .Palaute2 {border-left: 10px solid red;}
